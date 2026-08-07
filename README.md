@@ -1,4 +1,4 @@
-# Nexo Store — Proyecto Base
+# Xentro Tecno — Proyecto Base
 
 Proyecto base entregado a los estudiantes para el desarrollo del curso.
 
