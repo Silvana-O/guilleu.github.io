@@ -1,24 +1,95 @@
-# Xentro Tecno — Proyecto Base
+# Xentro Tecno
 
-Proyecto base entregado a los estudiantes para el desarrollo del curso.
+## Estudiante
 
-## Estado inicial
+Silvana Ottonelli
 
-La estructura general del sistema ya se encuentra creada. En el **Sprint 1** únicamente se trabajará sobre la página de inicio. Los demás módulos serán desarrollados en los próximos sprints.
+## Descripción del proyecto
 
-## Sprint 1
+Xentro Tecno es un e-commerce dedicado a la venta de productos tecnológicos. El sitio permite explorar una selección de notebooks, monitores, periféricos y accesorios, ofreciendo una interfaz moderna, clara y adaptable a distintos dispositivos.
 
-Durante este sprint deberán:
+Este proyecto fue desarrollado como parte del Taller Integrador de Sistemas – Desarrollo Web.
 
-- Definir la temática y el público objetivo.
-- Crear la identidad visual del sitio (nombre, colores y tipografías).
-- Personalizar el hero principal.
-- Incorporar tarjetas estáticas de productos o servicios.
-- Utilizar HTML semántico y Bootstrap.
-- Garantizar un diseño responsive.
-- Agregar textos alternativos a las imágenes.
-- Mantener la navegación entre todas las páginas del proyecto.
+## Público objetivo
 
-## Ejecución
+- Estudiantes.
+- Profesionales.
+- Personas interesadas en tecnología.
+- Usuarios que buscan productos informáticos para estudio, trabajo o entretenimiento.
 
-Abrir el proyecto utilizando **Live Server** desde Visual Studio Code.
+## Categorías de productos
+
+- Notebooks
+- Monitores
+- Periféricos
+- Audio
+- Accesorios tecnológicos
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+- Git
+- GitHub
+
+## Estructura del proyecto
+
+```
+/
+├── index.html
+├── catalogo.html
+├── producto.html
+├── carrito.html
+├── perfil.html
+├── admin.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── base.js
+└── img/
+```
+
+## Instrucciones de ejecución
+
+1. Clonar el repositorio.
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Ejecutar el archivo `index.html` utilizando Live Server o abrirlo directamente en un navegador.
+
+## Funcionalidades desarrolladas en el Sprint 1
+
+- Personalización de la identidad visual.
+- Barra de navegación responsive.
+- Hero principal.
+- Productos destacados estáticos.
+- Sección de beneficios.
+- Footer.
+- Diseño responsive.
+- Uso de HTML semántico.
+- Estilos personalizados mediante CSS y Bootstrap.
+- Navegación entre las páginas del proyecto.
+
+## Funcionalidades pendientes
+
+Las siguientes funcionalidades serán implementadas en los próximos sprints:
+
+- Catálogo dinámico.
+- Búsqueda y filtros.
+- Página de detalle de productos.
+- Carrito de compras.
+- Inicio de sesión.
+- Registro de usuarios.
+- Persistencia con LocalStorage.
+- Firebase Authentication.
+- Cloud Firestore.
+- Panel de administración.
+- Operaciones CRUD.
+
+## Decisiones de diseño
+
+- Se seleccionó una identidad visual basada en tonos azules y amarillos para transmitir confianza e innovación.
+- Se utilizó Bootstrap para facilitar el diseño responsive.
+- Se eligieron imágenes representativas de productos tecnológicos.
+- La interfaz fue diseñada para ser simple, clara y fácil de navegar.
+- Las funcionalidades que corresponden a futuros sprints permanecen bloqueadas, según la consigna del proyecto.
