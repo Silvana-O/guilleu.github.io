@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Xentro Tecno | Inicio</title>
 </head>
-
+                    
 <body class='d-flex flex-column min-vh-100' data-page='inicio'>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
         <div class="container">
@@ -24,6 +24,9 @@
                     <li class="nav-item"><a class="nav-link" data-page="perfil" href="perfil.html">Mi perfil</a></li>
                     <li class="nav-item"><a class="nav-link" data-page="admin" href="admin.html">Administración</a></li>
                 </ul>
+                <a class="btn btn-outline-light btn-sm me-2" href="carrito.html">
+                    🛒 Carrito <span class="badge text-bg-light">0</span>
+                </a>
                 <button class="btn btn-outline-light btn-sm" id="btnLoginPlaceholder">Ingresar</button>
             </div>
         </div>
@@ -195,10 +198,34 @@
         </div>
     </main>
     <footer class="footer py-4 mt-auto">
-        <div class="container d-flex justify-content-between flex-wrap gap-2">
-            <span>© 2026 Xentro Tecno · Todos los derechos reservados</span><span>Tecnología para estudiar, trabajar y crear.</span>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h3 class="h5 text-white">Xentro Tecno</h3>
+                <p class="mb-0">Tecnología para estudiar, trabajar y crear.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="h5 text-white">Contacto</h3>
+                <p class="mb-0">contacto@xentrotecno.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="h5 text-white">Enlaces</h3>
+                <a href="index.html" class="d-block">Inicio</a>
+                <a href="catalogo.html" class="d-block">Catálogo</a>
+                <a href="carrito.html" class="d-block">Carrito</a>
+            </div>
         </div>
-    </footer>
+
+        <hr>
+
+        <div class="text-center">
+            <small>© 2026 Xentro Tecno · Proyecto académico de Desarrollo Web</small>
+        </div>
+    </div>
+</footer>
+   
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="appToast" class="toast">
             <div class="toast-header"><strong class="me-auto">Xentro Tecno</strong><button class="btn-close"
