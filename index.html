@@ -1,64 +1,158 @@
 <!doctype html>
-<html lang='es'>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Xentro Tecno | Inicio</title>
 </head>
-                    
-<body class='d-flex flex-column min-vh-100' data-page='inicio'>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">X</span> Xentro Tecno</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Abrir menú de navegación"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" data-page="inicio" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="catalogo" href="catalogo.html">Catálogo</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="producto" href="producto.html">Producto</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="carrito" href="carrito.html">Carrito</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="perfil" href="perfil.html">Mi perfil</a></li>
-                    <li class="nav-item"><a class="nav-link" data-page="admin" href="admin.html">Administración</a></li>
-                </ul>
-                <a class="btn btn-outline-light btn-sm me-2" href="carrito.html">
-                    🛒 Carrito <span class="badge text-bg-light">0</span>
+
+<body class="d-flex flex-column min-vh-100" data-page="inicio">
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm" aria-label="Navegación principal">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">X</span>
+                    Xentro Tecno
                 </a>
-                <button class="btn btn-outline-light btn-sm" id="btnLoginPlaceholder">Ingresar</button>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="inicio" href="index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="catalogo" href="catalogo.html">Catálogo</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="producto" href="producto.html">Producto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="carrito" href="carrito.html">Carrito</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="perfil" href="perfil.html">Mi perfil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="admin" href="admin.html">Administración</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-outline-light btn-sm me-2" href="carrito.html">
+                        <span aria-hidden="true">🛒</span>
+                        Carrito
+                        <span class="badge text-bg-light">0</span>
+                    </a>
+
+                    <button class="btn btn-outline-light btn-sm"
+                        id="btnLoginPlaceholder"
+                        type="button">
+                        Ingresar
+                    </button>
+
+                </div>
             </div>
-        </div>
-    </nav>
-    <main class='flex-grow-1'>
-        <section class="hero">
+        </nav>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="flex-grow-1">
+
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="titulo-principal">
             <div class="container py-5">
+
                 <div class="row align-items-center g-5">
+
                     <div class="col-lg-6">
-                       <span class="badge rounded-pill mb-3" style="background-color: #5bc0eb; color: #123b5d;">Novedades 2026</span>
-                        <h1 class="display-4 fw-bold">Todo lo que buscas en tecnología, en un solo lugar.</h1>
-                        <p class="lead text-secondary">En Xentro Tecno encontrarás notebooks, periféricos, 
-                            componentes, accesorios y mucho más. Equipamos tu espacio para estudiar, trabajar y disfrutar de la mejor tecnología.</p>
-                        <div class="d-flex gap-2 flex-wrap"><a class="btn btn-primary btn-lg"
-                                href="catalogo.html">Explorar productos</a><button class="btn btn-outline-dark btn-lg"
-                                id="btnProjectInfo">Más información</button></div>
+
+                        <span class="badge rounded-pill mb-3"
+                            style="background-color: #5bc0eb; color: #123b5d;">
+                            Novedades 2026
+                        </span>
+
+                        <h1 id="titulo-principal" class="display-4 fw-bold">
+                            Todo lo que buscas en tecnología, en un solo lugar.
+                        </h1>
+
+                        <p class="lead text-secondary">
+                            En Xentro Tecno encontrarás notebooks, periféricos,
+                            componentes, accesorios y mucho más. Equipamos tu espacio
+                            para estudiar, trabajar y disfrutar de la mejor tecnología.
+                        </p>
+
+                        <div class="d-flex gap-2 flex-wrap">
+                            <a class="btn btn-primary btn-lg" href="catalogo.html">
+                                Explorar productos
+                            </a>
+
+                            <button class="btn btn-outline-dark btn-lg"
+                                id="btnProjectInfo"
+                                type="button">
+                                Más información
+                            </button>
+                        </div>
+
                         <div class="row g-3 mt-4">
+
                             <div class="col-4">
-                                <div class="metric"><strong>+500</strong><span>Productos</span></div>
+                                <div class="metric">
+                                    <strong>+500</strong>
+                                    <span>Productos</span>
+                                </div>
                             </div>
+
                             <div class="col-4">
-                                <div class="metric"><strong>Envíos</strong><span>Todo Uruguay</span></div>
+                                <div class="metric">
+                                    <strong>Envíos</strong>
+                                    <span>Todo Uruguay</span>
+                                </div>
                             </div>
+
                             <div class="col-4">
-                                <div class="metric"><strong>Garantía</strong><span>Oficial</span></div>
+                                <div class="metric">
+                                    <strong>Garantía</strong>
+                                    <span>Oficial</span>
+                                </div>
                             </div>
+
                         </div>
                     </div>
+
+
+                    <!-- PRODUCTO DESTACADO -->
                     <div class="col-lg-6">
                         <div class="hero-card">
-                            <div class="hero-card-header">
+
+                            <div class="hero-card-header" aria-hidden="true">
                                 <span class="dot"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
@@ -70,183 +164,469 @@
 
                             <div class="floating-card">
                                 <span>✨ Nuevo ingreso</span>
+
                                 <strong>
                                     Laptop IdeaPad 5x 2-in-1 (14" Snapdragon)
-                                    <br>Copilot+ PC
+                                    <br>
+                                    Copilot+ PC
                                 </strong>
-                                <small>La elección más inteligente para la versatilidad</small>
+
+                                <small>
+                                    La elección más inteligente para la versatilidad
+                                </small>
                             </div>
+
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
-        <section class="container py-5">
+
+
+        <!-- PRODUCTOS DESTACADOS -->
+        <section class="container py-5" aria-labelledby="productos-destacados">
+
             <div class="section-heading">
-                <div><span class="eyebrow">Tecnología</span>
-                    <h2 class="fw-bold">Productos destacados</h2>
-                </div><span class="badge text-bg-light border">Ofertas destacadas</span>
-            </div>
-            <div class="student-task">
-                <div class="student-task-number">1</div>
                 <div>
-                    <h3 class="h5">¿Por qué elegir Xentro Tecno?</h3>
-                    <p class="mb-0">Ofrecemos productos tecnológicos de calidad, 
-                        atención personalizada y envíos a todo el país.</p>
+                    <span class="eyebrow">Tecnología</span>
+                    <h2 id="productos-destacados" class="fw-bold">
+                        Productos destacados
+                    </h2>
                 </div>
+
+                <span class="badge text-bg-light border">
+                    Ofertas destacadas
+                </span>
             </div>
+
+
+            <div class="student-task">
+
+                <div class="student-task-number" aria-hidden="true">
+                    1
+                </div>
+
+                <div>
+                    <h3 class="h5">
+                        ¿Por qué elegir Xentro Tecno?
+                    </h3>
+
+                    <p class="mb-0">
+                        Ofrecemos productos tecnológicos de calidad,
+                        atención personalizada y envíos a todo el país.
+                    </p>
+                </div>
+
+            </div>
+
+
             <div class="row g-4 mt-1">
+
+                <!-- PRODUCTO 1 -->
                 <div class="col-md-6 col-xl-3">
                     <article class="placeholder-product">
+
                         <img src="img/notebook.jpg"
                             class="card-img-top product-image"
                             alt="Notebook Lenovo IdeaPad">
-                        <div class="p-3"><span class="eyebrow">Notebook</span>
-                            <h3 class="h5 mt-2">Lenovo IdeaPad Slim 3</h3>
-                            <p class="text-secondary small">Rendimiento ideal para estudiar, trabajar y disfrutar del entretenimiento.</p>
-                            <div class="d-flex justify-content-between align-items-center"><strong>USD 699</strong>
-                                <a href="producto.html" class="btn btn-primary btn-sm">Ver producto</a>
+
+                        <div class="p-3">
+
+                            <span class="eyebrow">
+                                Notebook
+                            </span>
+
+                            <h3 class="h5 mt-2">
+                                Lenovo IdeaPad Slim 3
+                            </h3>
+
+                            <p class="text-secondary small">
+                                Rendimiento ideal para estudiar, trabajar
+                                y disfrutar del entretenimiento.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>USD 699</strong>
+
+                                <a href="producto.html" class="btn btn-primary btn-sm">
+                                    Ver producto
+                                </a>
+                            </div>
+
                         </div>
                     </article>
                 </div>
+
+
+                <!-- PRODUCTO 2 -->
                 <div class="col-md-6 col-xl-3">
                     <article class="placeholder-product">
+
                         <img src="img/monitor.jpg"
                             class="card-img-top product-image"
-                            alt="Monitor LG UltraWide 29">
-                        <div class="p-3"><span class="eyebrow">Monitor</span>
-                            <h3 class="h5 mt-2">LG UltraWide 29"</h3>
-                            <p class="text-secondary small">Mayor espacio de trabajo con excelente calidad de imagen.</p>
-                            <div class="d-flex justify-content-between align-items-center"><strong>USD 329</strong>
-                                <a href="producto.html" class="btn btn-primary btn-sm">Ver producto</a></div>
+                            alt="Monitor LG UltraWide 29 pulgadas">
+
+                        <div class="p-3">
+
+                            <span class="eyebrow">
+                                Monitor
+                            </span>
+
+                            <h3 class="h5 mt-2">
+                                LG UltraWide 29"
+                            </h3>
+
+                            <p class="text-secondary small">
+                                Mayor espacio de trabajo con excelente
+                                calidad de imagen.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>USD 329</strong>
+
+                                <a href="producto.html" class="btn btn-primary btn-sm">
+                                    Ver producto
+                                </a>
+                            </div>
+
                         </div>
                     </article>
                 </div>
+
+
+                <!-- PRODUCTO 3 -->
                 <div class="col-md-6 col-xl-3">
                     <article class="placeholder-product">
+
                         <img src="img/mouse.jpg"
                             class="card-img-top product-image"
                             alt="Mouse Logitech MX Master 3S">
-                        <div class="p-3"><span class="eyebrow">Periféricos</span>
-                            <h3 class="h5 mt-2">Logitech MX Master 3S</h3>
-                            <p class="text-secondary small">Precisión, comodidad y productividad en cada movimiento.</p>
-                            <div class="d-flex justify-content-between align-items-center"><strong>USD 119</strong>
-                                <a href="producto.html" class="btn btn-primary btn-sm">Ver producto</a></div>
+
+                        <div class="p-3">
+
+                            <span class="eyebrow">
+                                Periféricos
+                            </span>
+
+                            <h3 class="h5 mt-2">
+                                Logitech MX Master 3S
+                            </h3>
+
+                            <p class="text-secondary small">
+                                Precisión, comodidad y productividad
+                                en cada movimiento.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>USD 119</strong>
+
+                                <a href="producto.html" class="btn btn-primary btn-sm">
+                                    Ver producto
+                                </a>
+                            </div>
+
                         </div>
                     </article>
                 </div>
+
+
+                <!-- PRODUCTO 4 -->
                 <div class="col-md-6 col-xl-3">
                     <article class="placeholder-product">
+
                         <img src="img/auricular.jpg"
                             class="card-img-top product-image"
                             alt="Auriculares JBL Tune 770NC">
-                        <div class="p-3"><span class="eyebrow">Audio</span>
-                            <h3 class="h5 mt-2">JBL Tune 770NC</h3>
-                            <p class="text-secondary small">Sonido envolvente con cancelación activa de ruido.</p>
-                            <div class="d-flex justify-content-between align-items-center"><strong>USD 149</strong>
-                                <a href="producto.html" class="btn btn-primary btn-sm">Ver producto</a></div>
+
+                        <div class="p-3">
+
+                            <span class="eyebrow">
+                                Audio
+                            </span>
+
+                            <h3 class="h5 mt-2">
+                                JBL Tune 770NC
+                            </h3>
+
+                            <p class="text-secondary small">
+                                Sonido envolvente con cancelación
+                                activa de ruido.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>USD 149</strong>
+
+                                <a href="producto.html" class="btn btn-primary btn-sm">
+                                    Ver producto
+                                </a>
+                            </div>
+
                         </div>
                     </article>
                 </div>
+
             </div>
         </section>
-        <section class="benefits py-5">
+
+
+        <!-- BENEFICIOS -->
+        <section class="benefits py-5" aria-labelledby="beneficios">
+
             <div class="container">
+
+                <h2 id="beneficios" class="visually-hidden">
+                    Beneficios de Xentro Tecno
+                </h2>
+
                 <div class="row g-4 text-center">
+
                     <div class="col-md-4">
-                        <div class="benefit-card"><span>💻</span>
-                            <h3>Tecnología confiable</h3>
-                            <p>Productos seleccionados para estudiar, trabajar y disfrutar.</p>
+                        <div class="benefit-card">
+
+                            <span aria-hidden="true">💻</span>
+
+                            <h3>
+                                Tecnología confiable
+                            </h3>
+
+                            <p>
+                                Productos seleccionados para estudiar,
+                                trabajar y disfrutar.
+                            </p>
+
                         </div>
                     </div>
+
+
                     <div class="col-md-4">
-                        <div class="benefit-card"><span>🛒</span>
-                            <h3>Compra fácil</h3>
-                            <p>Navegá nuestra tienda desde cualquier dispositivo.</p>
+                        <div class="benefit-card">
+
+                            <span aria-hidden="true">🛒</span>
+
+                            <h3>
+                                Compra fácil
+                            </h3>
+
+                            <p>
+                                Navegá nuestra tienda desde cualquier dispositivo.
+                            </p>
+
                         </div>
                     </div>
+
+
                     <div class="col-md-4">
-                        <div class="benefit-card"><span>🤝</span>
-                            <h3>Atención personalizada</h3>
-                            <p>Te ayudamos a elegir la mejor solución tecnológica.</p>
+                        <div class="benefit-card">
+
+                            <span aria-hidden="true">🤝</span>
+
+                            <h3>
+                                Atención personalizada
+                            </h3>
+
+                            <p>
+                                Te ayudamos a elegir la mejor solución tecnológica.
+                            </p>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        <div class="modal fade" id="projectInfoModal" tabindex="-1">
+
+
+        <!-- MODAL -->
+        <div class="modal fade"
+            id="projectInfoModal"
+            tabindex="-1"
+            aria-labelledby="projectInfoModalLabel"
+            aria-hidden="true">
+
             <div class="modal-dialog modal-lg modal-dialog-centered">
+
                 <div class="modal-content">
+
                     <div class="modal-header">
-                        <h2 class="modal-title fs-5">Sobre Xentro Tecno</h2><button class="btn-close"
-                            data-bs-dismiss="modal"></button>
+
+                        <h2 class="modal-title fs-5" id="projectInfoModalLabel">
+                            Sobre Xentro Tecno
+                        </h2>
+
+                        <button class="btn-close"
+                            type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Cerrar">
+                        </button>
+
                     </div>
+
+
                     <div class="modal-body">
-                        <p>En Xentro Tecno ofrecemos una amplia variedad de productos tecnológicos para estudiar,
-                             trabajar y disfrutar del entretenimiento. Nuestro compromiso es brindar calidad,
-                              innovación y una excelente atención.</p>
+
+                        <p>
+                            En Xentro Tecno ofrecemos una amplia variedad
+                            de productos tecnológicos para estudiar, trabajar
+                            y disfrutar del entretenimiento. Nuestro compromiso
+                            es brindar calidad, innovación y una excelente atención.
+                        </p>
+
+
                         <div class="row g-3">
+
                             <div class="col-md-6">
-                                <div class="sprint-summary"><strong>Amplio catálogo</strong><span>Notebooks, 
-                                    periféricos, componentes y accesorios de las mejores marcas.</span></div>
+                                <div class="sprint-summary">
+                                    <strong>Amplio catálogo</strong>
+                                    <span>
+                                        Notebooks, periféricos, componentes
+                                        y accesorios de las mejores marcas.
+                                    </span>
+                                </div>
                             </div>
+
+
                             <div class="col-md-6">
-                                <div class="sprint-summary"><strong>Envíos rápidos</strong><span>Realizamos 
-                                    envíos a todo Uruguay con seguimiento de tu compra.</span></div>
+                                <div class="sprint-summary">
+                                    <strong>Envíos rápidos</strong>
+                                    <span>
+                                        Realizamos envíos a todo Uruguay
+                                        con seguimiento de tu compra.
+                                    </span>
+                                </div>
                             </div>
+
+
                             <div class="col-md-6">
-                                <div class="sprint-summary"><strong>Garantía oficial</strong><span>Todos nuestros
-                                     productos cuentan con garantía y respaldo.</span></div>
+                                <div class="sprint-summary">
+                                    <strong>Garantía oficial</strong>
+                                    <span>
+                                        Todos nuestros productos cuentan
+                                        con garantía y respaldo.
+                                    </span>
+                                </div>
                             </div>
+
+
                             <div class="col-md-6">
-                                <div class="sprint-summary"><strong>Atención personalizada</strong><span>Te asesoramos
-                                     para encontrar el producto ideal según tus necesidades.</span></div>
+                                <div class="sprint-summary">
+                                    <strong>Atención personalizada</strong>
+                                    <span>
+                                        Te asesoramos para encontrar el producto
+                                        ideal según tus necesidades.
+                                    </span>
+                                </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
     </main>
+
+
+    <!-- PIE DE PÁGINA -->
     <footer class="footer py-4 mt-auto">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <h3 class="h5 text-white">Xentro Tecno</h3>
-                <p class="mb-0">Tecnología para estudiar, trabajar y crear.</p>
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <h2 class="h5 text-white">
+                        Xentro Tecno
+                    </h2>
+
+                    <p class="mb-0">
+                        Tecnología para estudiar, trabajar y crear.
+                    </p>
+                </div>
+
+
+                <div class="col-md-4">
+                    <h2 class="h5 text-white">
+                        Contacto
+                    </h2>
+
+                    <p class="mb-0">
+                        contacto@xentrotecno.com
+                    </p>
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <h2 class="h5 text-white">
+                        Enlaces
+                    </h2>
+
+                    <nav aria-label="Enlaces del pie de página">
+
+                        <a href="index.html" class="d-block">
+                            Inicio
+                        </a>
+
+                        <a href="catalogo.html" class="d-block">
+                            Catálogo
+                        </a>
+
+                        <a href="carrito.html" class="d-block">
+                            Carrito
+                        </a>
+
+                    </nav>
+
+                </div>
+
             </div>
 
-            <div class="col-md-4">
-                <h3 class="h5 text-white">Contacto</h3>
-                <p class="mb-0">contacto@xentrotecno.com</p>
+
+            <hr>
+
+
+            <div class="text-center">
+
+                <small>
+                    © 2026 Xentro Tecno · Proyecto académico de Desarrollo Web
+                </small>
+
             </div>
 
-            <div class="col-md-4">
-                <h3 class="h5 text-white">Enlaces</h3>
-                <a href="index.html" class="d-block">Inicio</a>
-                <a href="catalogo.html" class="d-block">Catálogo</a>
-                <a href="carrito.html" class="d-block">Carrito</a>
-            </div>
         </div>
+    </footer>
 
-        <hr>
 
-        <div class="text-center">
-            <small>© 2026 Xentro Tecno · Proyecto académico de Desarrollo Web</small>
-        </div>
-    </div>
-</footer>
-   
+    <!-- NOTIFICACIONES -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="appToast" class="toast">
-            <div class="toast-header"><strong class="me-auto">Xentro Tecno</strong><button class="btn-close"
-                    data-bs-dismiss="toast"></button></div>
+
+        <div id="appToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+
+            <div class="toast-header">
+
+                <strong class="me-auto">
+                    Xentro Tecno
+                </strong>
+
+                <button class="btn-close"
+                    type="button"
+                    data-bs-dismiss="toast"
+                    aria-label="Cerrar">
+                </button>
+
+            </div>
+
             <div class="toast-body" id="toastMessage"></div>
+
         </div>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/base.js"></script>
+
 </body>
 
 </html>
